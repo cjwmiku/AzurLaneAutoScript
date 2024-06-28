@@ -18,8 +18,7 @@ SIM_VALUE = 0.90
 
 
 class EquipmentChange(Equipment):
-    equip_list = {}
-    equipping_list = []
+    equipment_list = {}
 
     def equipping_set(self, enable=False):
         if equipping_filter.set('on' if enable else 'off', main=self):
